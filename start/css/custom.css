@@ -1,0 +1,117 @@
+nav{
+    display: block;
+    
+}
+nav.nav-fixed{
+    line-height: 2em;
+    padding: 5px;
+}
+nav ul{
+    
+}
+nav ul,li{
+    display: inline-block;
+    padding: 2px; 
+    margin: 2em;
+    
+}
+nav ul,li,a{
+    color: #6f0707;
+    font-size: 2em;
+    padding: 10px;
+    font-family: 'Roboto';
+    transition: all .2s ease;
+}
+nav ul,li,a:hover{
+    color: lightcoral;
+    transform: scale(1.1)
+}
+iframe{
+width: 100%;
+}
+/*ID styling here*/
+#banner{
+    background-size: cover;
+    width: 100%;
+    height: 1200px;
+    background-image: url(http://dailycapital.pk/wp-content/uploads/2015/07/1423075276.jpg);
+}
+#about{
+    -webkit-filter:brightness(80%);
+    background-size: cover;
+    height: 882px;
+    width: 100%;
+    background-image: url(http://images6.fanpop.com/image/photos/33400000/YUMMY-FAST-FOOD-fast-food-33414480-1050-882.jpg);
+}
+
+/*END OF ID STYLING*/
+.introtxt{
+    
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 40%;
+    color: #fff;
+}
+.introtxt h1{
+    line-height: 50px;
+    font-size: 2em;
+}
+.baze,i{
+    color: #6f0707;
+}
+.content{
+    font-size: 1.5em;
+    padding-top: 5px;
+    font-weight: 100;
+    line-height: 25px;
+    width: 40%;
+    padding: 20px;
+}
+.content h2{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card {
+  position: relative;
+  float: left;
+  padding-bottom: 25%;
+  width: 25%;
+  text-align: center;
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__front,
+.card__back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.card__front {
+  background-color: #fff;
+}
+
+.card__back {
+  background-color: #1e1e1e;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+.card.effect__hover:hover .card__front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect__hover:hover .card__back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
